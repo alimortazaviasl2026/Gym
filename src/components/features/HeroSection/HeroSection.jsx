@@ -23,7 +23,7 @@ function HeroSection() {
                </Col >
                     <Col  xs={12} lg={6}>
                    <div >
-                        <img src="/Gym/Group-4.png"  className='w-100' />
+                        <img src="/Gym/Frame 314 4.png"  className='w-100' />
                    </div>
                </Col>
           </Row>
