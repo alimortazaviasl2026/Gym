@@ -2,6 +2,7 @@ import { createBrowserRouter } from "react-router";
 import LayoutGym from "./layouts/LayoutGym";
 import React from "react";
 import Home from "./pages/home/Page";
+import NotFound from "./components/common/NotFound";
 
 const router = createBrowserRouter([
     {
@@ -22,7 +23,7 @@ const router = createBrowserRouter([
         },
         {
          path:'/*',
-          element:<div>notFound(404)</div>
+          element:<NotFound/>
         },
       ]
     },
