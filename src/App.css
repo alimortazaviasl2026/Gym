@@ -1,0 +1,226 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+
+:root {
+    --PureWhite :#FFFFFF;
+    --orangeDark :#D90A14;
+    --orangeNormal :#CD4E17;
+    --blackbg:#1D1D1D;
+    --grayText:#888888;
+}
+
+
+
+body{
+    /* background: linear-gradient(#1D1D1D , rgb(17, 15, 15)) ; */
+    background-color: #1D1D1D;
+    font-family: Arial, Helvetica, sans-serif;
+    /* position: relative; */
+ 
+
+}
+
+
+.bg {
+       background-image: url('../public//Rectangle\ 3\ \(1\).png');
+    background-repeat: no-repeat;
+    background-size: cover;
+   
+}
+
+input {
+    outline: none !important;
+    border: none;
+}
+
+
+
+
+
+/* .text-justify {
+    text-align: justify !important ;
+} */
+
+
+ul li , .btn-auth  , .circle{
+    transition: all 250ms ease-in-out;
+    -webkit-transition: all 250ms ease-in-out;
+    -moz-transition: all 250ms ease-in-out;
+    -ms-transition: all 250ms ease-in-out;
+    -o-transition: all 250ms ease-in-out;
+}
+
+
+
+
+ul li:hover  , .btn-auth:hover{
+    opacity: 30%;
+    transform: translatex(6px);
+    -webkit-transform: translatex(6px);
+    -moz-transform: translatex(6px);
+    -ms-transform: translatex(6px);
+    -o-transform: translatex(6px);
+}
+
+
+
+
+.detailCard::after {
+    content: '';
+    width: 4px;
+    height: 100px;
+    background-color: var(--orangeDark);
+    position: absolute;
+    top: 0;
+    left: -10px;
+}
+
+.m6rem {
+    margin: 6rem 1rem;
+}
+
+
+.translateCircle {
+    transform: translateX(170px);
+    -webkit-transform: translateX(170px);
+    -moz-transform: translateX(170px);
+    -ms-transform: translateX(170px);
+    -o-transform: translateX(170px);
+}
+
+
+.lineGradient {
+    background: linear-gradient(to right , var(--orangeNormal),var(--orangeDark),yellow);
+}
+
+
+
+.comment {
+    transition: all 1s ease-in-out;
+    -webkit-transition: all 1s ease-in-out;
+    -moz-transition: all 1s ease-in-out;
+    -ms-transition: all 1s ease-in-out;
+    -o-transition: all 1s ease-in-out;
+    animation: hover 1s 1 ease-in-out;
+    -webkit-animation: hover 1s 1 ease-in-out;
+}
+
+
+.box  {
+     transition: all 250ms ease-in-out;
+     -webkit-transition: all 250ms ease-in-out;
+     -moz-transition: all 250ms ease-in-out;
+     -ms-transition: all 250ms ease-in-out;
+     -o-transition: all 250ms ease-in-out;
+}
+
+
+.box:hover{
+    transform: translatey(8px);
+    -webkit-transform: translatey(8px);
+    -moz-transform: translatey(8px);
+    -ms-transform: translatey(8px);
+    -o-transform: translatey(8px);
+}
+
+
+@keyframes hover {
+    0%{
+        transform: translateY(40px);
+        -webkit-transform: translateY(40px);
+        -moz-transform: translateY(40px);
+        -ms-transform: translateY(40px);
+        -o-transform: translateY(40px);
+}
+    100%{
+        transform: translateY(0px);
+        -webkit-transform: translateY(0px);
+        -moz-transform: translateY(0px);
+        -ms-transform: translateY(0px);
+        -o-transform: translateY(0px);
+}
+}
+
+.form_anime{
+ transition: all 1s ease-in-out;
+ -webkit-transition: all 1s ease-in-out;
+ -moz-transition: all 1s ease-in-out;
+ -ms-transition: all 1s ease-in-out;
+ -o-transition: all 1s ease-in-out;
+ animation: move 1s 1 ease-in-out;
+ -webkit-animation: move 1s 1 ease-in-out;
+} 
+
+
+@keyframes move {
+     0%{
+        opacity: 10%;
+        transform: translateY(60px);
+        -webkit-transform: translateY(60px);
+        -moz-transform: translateY(60px);
+        -ms-transform: translateY(60px);
+        -o-transform: translateY(60px);
+}
+     100%{
+        opacity: 90%;
+        transform: translateY(0);
+        -webkit-transform: translateY(0);
+        -moz-transform: translateY(0);
+        -ms-transform: translateY(0);
+        -o-transform: translateY(0);
+}
+}
+
+
+.rocket {
+    transition: all 1s ease ;
+    -webkit-transition: all 1s ease-in-out ;
+    -moz-transition: all 1s ease ;
+    -ms-transition: all 1s ease ;
+    -o-transition: all 1s ease ;
+    animation: moveRocket 1s infinite ease-in-out;
+    -webkit-animation: moveRocket 1s infinite ease-in-out;
+}
+
+
+@keyframes moveRocket {
+  0%{
+    transform: translateY(10px);
+    -webkit-transform: translateY(10px);
+    -moz-transform: translateY(10px);
+    -ms-transform: translateY(10px);
+    -o-transform: translateY(10px);
+}
+  100%{
+    transform: translateY(0);
+    -webkit-transform: translateY(0);
+    -moz-transform: translateY(0);
+    -ms-transform: translateY(0);
+    -o-transform: translateY(0);
+}
+}
+
+
+
+footer a {
+  transition: 0.3s;
+}
+
+footer a:hover {
+  color: orange !important;
+  padding-right: 5px;
+}
+
+footer .btn-warning {
+  font-weight: bold;
+}
+
+footer {
+  box-shadow: 0 -5px 20px rgba(255, 166, 0, 0.2);
+}

@@ -1,0 +1,35 @@
+import { createBrowserRouter } from "react-router";
+import LayoutGym from "./layouts/LayoutGym";
+import React from "react";
+import Home from "./pages/home/Page";
+
+const router = createBrowserRouter([
+    {
+      path:'/',
+      element:<LayoutGym/>,
+      children:[
+        {
+          index: true,
+          element:<Home/>
+        },
+        {
+          path:'programs',
+          element:<div>programs</div>
+        },
+        {
+         path:'coaching',
+          element:<div>coachs</div>
+        },
+        {
+         path:'/*',
+          element:<div>notFound(404)</div>
+        },
+      ]
+    },
+    {
+        path:'/login' ,
+        element:<div>login</div>
+    }
+])
+
+export default router
